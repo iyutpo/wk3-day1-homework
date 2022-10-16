@@ -271,6 +271,12 @@ form .button button {
     background-color: #4977d1;
     color: #ffffff;
     border: none;
+    cursor: pointer;
+}
+form .button button:disabled {
+    background-color: rgba(73, 119, 209, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
 }
 
 
