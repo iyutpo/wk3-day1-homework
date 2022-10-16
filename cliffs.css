@@ -1,12 +1,91 @@
+
+
+
+
+
+
+
+
+
+/* Table */
+caption {
+    background-color: #852b1b;
+    color: white;
+}
+/* .tableImages th {
+    background-color: #852b1b;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+} */
+#container-table {
+    /* margin: 100 200 100 200; */
+}
+table.tableImages tbody img {
+    width: 70%;
+    height: 150px;
+}
+/* .tableImages tbody, tr, td {
+    width: 300px;
+} */
+td {
+    cursor: pointer;
+}
+.tableImages caption {
+    background-color: #852b1b;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+    caption-side: top;
+    width: 70%;
+}
+.close {
+    float: right;
+    cursor: pointer;
+}
+.backdrop {
+    z-index: 1;
+    opacity: .0;
+    filter: alpha(opacity=0);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.box {
+    z-index: 2;
+    position: fixed;
+    opacity: 1;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 400px;
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 5px #444444;
+    -webkit-box-shadow: 0px 0px 5px #444444;
+    box-shadow: 0px 0px 5px #444444;
+}
+.box img {
+    width: 600px;
+    height: 380px;
+}
+
+
 /* Header */
 header {
     width: 100%;
     min-height: 300px;
     padding-top: 3em;
-}
-#home header {
-    background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
 }
 .main-header {
     background-color:rgb(255, 255, 255, 0.8) ;
@@ -246,24 +325,5 @@ a.nav-link {
 .main-menu ul li.active a {
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -9,84 +9,50 @@
     <!-- Bootstrap CSS -->
 
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
     
   </head>
-  <body id="home">
-    <div id="container">
-    <header>
-      <div class="main-header">
-        <div class="logo">
-            <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-        </div>
+    <body id="home">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Activities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cliffs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div id="container">
+        <header>
+          <div class="main-header bg-dark" style="position: -webkit-sticky; position: sticky; top: 0; position: fixed; left: 10%;">
+            <div class="logo">
+                <img src="images/logo.png" alt="Great Cliffs Logo">
+            </div>
 
-        <!-- <nav class="main-menu navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button"class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <nav class="navbar navbar-custom navbar-expand-lg sticky-top navbar-dark bg-dark">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                      aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
-              
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="cliffs.html">Cliffs</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-right mr-auto bg-dark" style="width: 200px; align-content: right;">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./activities.html">Activities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cliffs.html">Cliffs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-          
-      </nav> -->
-        
-
-        <!-- <nav class="main-menu">
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="cliffs.html">Cliffs</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav> -->
-    </div>
-    </header>
+        </header>
 
     <main>
       <h1>Introducing California's Greatest Cliffs</h1>
@@ -118,50 +84,56 @@
     </main>
     
     <section>
-      <ul id="partners">
-        <li class="partner">
+      <ul id="partners" class="row">
+        <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
              <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
-         </li>
-         <li class="partner">
-             <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-         </li>
-         <li class="partner">
-             <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
-         </li>
-         <li class="partner">
-             <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
-         </li>
-         <li class="partner">
-             <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
-         </li>
-         <li class="partner">
-             <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-         </li>
+        </li>
+        <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+        </li>
+        <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+        </li>
+        <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+        </li>
+        <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+        </li>
+        <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+        </li>
      </ul>
     </section>
 
-    <footer>
-      <!-- Nondisclaimer -->
-      <div id="nondisclaimer">
-        <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com</div>
-        <div class="social">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-twitter"></a>
+      <footer>
+        <!-- Nondisclaimer -->
+        <div id="nondisclaimer">
+          <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com</div>
+          <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
         </div>
-      </div>
-      <!-- End Nondisclaimer -->
+        <!-- End Nondisclaimer -->
 
-      <!-- Disclaimer -->
-      <div id="disclaimer">
-        <p>
-          This website is designed and created solely for educational purposes
-          only at Westcliff University. All contents are not intended for any
-          commercial gain or use.
-        </p>
-      </div>
-      <!-- End Disclaimer -->
-    </footer>
+        <!-- Disclaimer -->
+        <div id="disclaimer">
+          <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+          </p>
+        </div>
+        <!-- End Disclaimer -->
+
+      </footer>
+
+
+
+
+      
     </div>
 
     <!-- Bootstrap jQuery -->
@@ -170,5 +142,8 @@
 
     <!-- Bootstrap JS -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

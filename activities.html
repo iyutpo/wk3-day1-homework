@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <meta name="color-scheme" content="light dark" charset="utf-8">
+        <link rel="stylesheet" href="activities.css">
+        <!-- Bootstrap CSS -->
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                /* Open lightbox on button click */
+                $(`td:nth-child(1) img, td:nth-child(2) img, td:nth-child(3) img, 
+                td:nth-child(4) img, td:nth-child(5) img`).click(function(){
+                    $('.backdrop').animate({'opacity':'.50'}, 300, 'linear').css('display', 'block');
+                    $('.box').fadeIn();
+                    //Check if lightbox has an image
+                    if ($('.box').contents('img')) {
+                        // alert($('.box').contents());
+                        console.log($('.box').contents()[0].name);
+                        $('.box').contents().remove('img'); //If true, clear image
+                    }
+                    //Get text content in attribute
+                    // var $altvalue = $(this).attr('alt'); //or var altvalue = $(this).attr('alt');
+                    var img = $(this).clone(); //Duplicate DOM element
+                    $('.box').append(img); //Insert duplicated element in another element
+                });
+                /* Click to close lightbox */
+                $('.close, .backdrop').click(function(){
+                    $('.backdrop').animate({'opacity':'0'}, 300, 'linear', function(){
+                        $('.backdrop').css('display', 'none');
+                    });
+                    $('.box').fadeOut();
+                });
+            });
+        </script>
+
+    </head>
+    <body id="cliffs">
+        <div id="container">
+              <header style="background-image: url('./images/forest_cliff.jpg');">
+                <div class="main-header bg-dark" style="position: -webkit-sticky; position: sticky; top: 0; position: fixed; left: 10%;">
+                  <div class="logo">
+                      <img src="images/logo.png" alt="Great Cliffs Logo">
+                  </div>
+      
+                  <nav class="navbar navbar-custom navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav text-right mr-auto bg-dark" style="width: 200px; align-content: right;">
+                        <li class="nav-item">
+                          <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Activities<span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="./cliffs.html">Cliffs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </header>
+        </div>
+        
+        <main>
+            <h1>Activities</h1>
+            <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
+
+            <table border="3" class="activities">
+                <caption class="activity-caption">Activities at the Cliffs</caption>
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>West Cliff</th>
+                        <th>North Cliff</th>
+                        <th>East Cliff</th>
+                        <th>South Cliff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hiking</td>
+                        <td>Kayak</td>
+                        <td>Skydiving</td>
+                        <td>Biking</td>
+                        <td>Camping</td>
+                    </tr>
+                    <tr>
+                        <td>College Hikes</td>
+                        <td>Western Kayak Meetup</td>
+                        <td>Seacliff Diving</td>
+                        <td>Bicycle for One</td>
+                        <td>Youth Camp</td>
+                    </tr>
+                    <tr>
+                        <td>Family Fun</td>
+                        <td>Not Available</td>
+                        <td>Sky is the limit</td>
+                        <td>Not Available</td>
+                        <td>Rent a Tent</td>
+                    </tr>
+                    <tr>
+                        <td>Treasure Trails</td>
+                        <td>Youth Kayaking</td>
+                        <td>Not Available</td>
+                        <td>Bike Meetup Group</td>
+                        <td>Campground Adventure</td>
+                    </tr>
+                    <tr>
+                        <td>Canyon Explorer</td>
+                        <td>Kayak Down</td>
+                        <td>Sky Diving for Beginners</td>
+                        <td>Not Available</td>
+                        <td>Sunset Camping</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </main>
+        
+        <section>
+            <ul id="partners" class="row">
+              <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+                   <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+              </li>
+              <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+                  <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+              </li>
+              <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+                  <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+              </li>
+              <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+                  <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+              </li>
+              <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+                  <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+              </li>
+              <li class="partner col-12 col-sm-6 col-md-4 col-lg-2">
+                  <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+              </li>
+           </ul>
+          </section>
+      
+            <footer>
+              <!-- Nondisclaimer -->
+              <div id="nondisclaimer">
+                <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com</div>
+                <div class="social">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                </div>
+              </div>
+              <!-- End Nondisclaimer -->
+      
+              <!-- Disclaimer -->
+              <div id="disclaimer">
+                <p>
+                  This website is designed and created solely for educational purposes
+                  only at Westcliff University. All contents are not intended for any
+                  commercial gain or use.
+                </p>
+              </div>
+              <!-- End Disclaimer -->
+      
+            </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+
+
+
